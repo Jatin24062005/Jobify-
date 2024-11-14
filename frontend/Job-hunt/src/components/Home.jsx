@@ -3,8 +3,8 @@ import Navbar from "./shared/Navbar"
 import Herosection from "./Herosection"
 import { CarouselContent } from "./ui/carousel"
 import CategoryCarousel from "./CategoryCarousel"
-import LatestJobs from "./Latestjobs"
 import Footer from "./shared/Footer"
+import LatestJobs from "./LatestJobs.jsx"
 const Home = () => {
  
 
