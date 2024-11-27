@@ -13,7 +13,7 @@ dotenv.config({});
 const app = express();
 
 app.get('/',(req,res)=>{
-   return res.send(<h1>Hello Gagan!</h1>);
+   return res.send('Hello Gagan!');
 })
 // middleware
 app.use(express.json());
