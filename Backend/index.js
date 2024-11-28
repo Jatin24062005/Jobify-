@@ -19,12 +19,6 @@ app.get('/',(req,res)=>{
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const corsOptions = {
-    origin:'https://jobifyjatin.vercel.app',
-    credentials:true
-}
-
-app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
 
