@@ -19,12 +19,8 @@ app.get('/',(req,res)=>{
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
-const corsOptions = {
-    origin:'https://jobify-nbw1.onrender.com/',
-    credentials:true
-}
+app.use(cors());
 
-app.use(cors(corsOptions));
 const PORT = process.env.PORT || 3000;
 
 
