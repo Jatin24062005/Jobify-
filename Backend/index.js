@@ -20,7 +20,7 @@ app.use(cookieParser());
 // CORS Configuration
 const corsOptions = {
     origin: "https://jobify-nbw1.onrender.com", // Frontend URL
-    credentials: true, // Allow credentials
+    credentials: true,
 };
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions)); // Handle preflight requests
