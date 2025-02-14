@@ -21,6 +21,9 @@ app.use(cookieParser());
 const corsOptions = {
     origin: "https://jobify-nbw1.onrender.com", // Frontend URL
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"], 
+
 };
 app.use(cors(corsOptions));
 app.options("*", cors(corsOptions)); // Handle preflight requests
